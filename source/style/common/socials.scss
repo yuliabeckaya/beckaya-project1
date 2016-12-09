@@ -1,0 +1,22 @@
+.socials__list-header {
+	@include inlineblock();
+	margin-left: -20px;
+}
+
+
+.socials__item {
+	@include inlineblock(middle);
+	float: left;
+	@extend %clearfix;
+	padding: 20px;
+
+	
+}
+
+.socials__item{
+	
+	&:hover {
+		background-image: url("assets/css/sprite/github_hover.svg");
+	}
+}
+

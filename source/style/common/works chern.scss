@@ -1,0 +1,50 @@
+.content__works{
+  @extend %clearfix;
+  height: 100vh;
+  min-height: 650px;
+}
+
+.content__works-left, .content__works-right{
+  float: left;
+  width: 50%;
+}
+
+.content__works-right{
+  position: relative;
+}
+
+.content__works-left{
+  &:before{
+    content: "";
+    height: 100%;
+    @include inlineblock(middle);
+  }
+}
+
+.content__works-display{
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 30%;
+  width: 50%;
+  z-index: 10;
+}
+
+.content__works-right-controls{
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 30%;
+}
+
+.img{
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.content__works-info{
+  @include inlineblock(middle);
+}
