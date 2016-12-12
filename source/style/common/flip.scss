@@ -1,3 +1,10 @@
+.container__author{
+	background-image: url("bg_author.png");
+	height: 900px;
+	background-position: center;
+	background-size: cover;
+}
+
 .author__header{
 	height: 150px;
     text-align: right;
@@ -6,14 +13,14 @@
 }
 
 .author__btn{
-	width: 300px;
-	height: 50px;
+	width: 184px;
+	height: 44px;
 	border: 1px solid #fff;
 	border-radius: 5%;
 	font-family: 'robotoregular';
 	text-decoration: none;
 	color: #fff;
-	padding: 20px;
+	padding: 15px 30px;
 
 		&:hover{
 			color: $blue;
@@ -33,8 +40,8 @@
 	}
 
 .flip-container, .front, .back {
-	width: 520px;
-	height: 480px;
+	width: 380px;
+	height: 410px;
 }
 
 /* flip speed goes here */
@@ -65,7 +72,7 @@
 	text-align: center;
     left: 0;
     vertical-align: middle;
-    margin: 71px auto;
+    margin: 22px auto;
 }    
 .user__author-avatar{
 	@include inlineblock(middle);
@@ -87,11 +94,13 @@
 	font-family: 'robotoregular';
 }
 .user__author-name{
-	font-size: 25px;
+	font-size: 28px;
 }
 
 .socials__author{
 	text-align: center;
+	margin-bottom: 28px;
+
 }
 
 /* back, initially hidden pane */
@@ -109,7 +118,7 @@ input {
 /* ---------- LOGIN ---------- */
 
 #login {
-	margin: 150px auto;
+	margin: 114px auto;
 	width: 280px;
 }
 
@@ -148,27 +157,34 @@ input {
 	flex-flow: row nowrap;
 }
 
-#front_btn input[type="submit"] {
+#front_btn input[type="button"], 
+#back_btn input[type="button"] {
 	font-weight: bold;
+	color: #fff;
+	background-color: $green;
 	cursor:pointer;
-	width: 173.3px;
+	width: 126.7px;
 	height: 50px;
 }
-#back_btn input[type="submit"] {
+#back_btn input[type="submit"], 
+#back_btn input[type="button"] {
 	font-weight: bold;
-	margin-bottom: 2em;
+	color: #fff;
+	background-color: $green;
 	cursor:pointer;
-	width: 260px;
+	width: 190px;
 	height: 50px;
 }
 
-#front_btn input[type="submit"]:hover {
-	background-color: $marengo;
-}
-
+#front_btn input[type="button"]:hover, 
+#back_btn input[type="button"]:hover,
 #back_btn input[type="submit"]:hover {
-	background-color: $marengo;
+	background-color: $blue;
 }
+
+//#back_btn input[type="submit"]:hover {
+//	background-color: $blue;
+//}
 
 #login > p {
 	text-align: center;
@@ -182,4 +198,10 @@ input {
 	border: none;
 	margin: 0;
 	padding: 0;
+}
+.footer__author{
+	height: 60px;
+	margin-top: -60px;
+	text-align: center;
+	color: #fff;
 }

@@ -1,3 +1,8 @@
+//.content__blog{
+//	max-width: 1180px;
+//}
+
+
 .triangle__blog{
 	background-color: $blue;
 	background-image: url("sprite/blog_header.svg");
@@ -7,7 +12,12 @@
 	margin: 0 auto;
 }
 
-
+.user__blog{
+	text-align: center;
+    left: 0;
+    vertical-align: middle;
+    margin-bottom: 112px; 
+}
 
 .maincontainer__blog{
 	width: 80%;
@@ -54,7 +64,7 @@
 	text-align: left;
 }
 .blog__date{
-	color: $grey;
+	color: $green;
 }
 
 .blog{
