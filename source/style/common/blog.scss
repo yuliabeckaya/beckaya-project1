@@ -2,7 +2,11 @@
 //	max-width: 1180px;
 //}
 
-
+.bg__header-blog{
+	position: absolute;
+    margin: 15% 0 0 42%;
+    opacity: 0.2;
+}
 .triangle__blog{
 	background-color: $blue;
 	background-image: url("sprite/blog_header.svg");

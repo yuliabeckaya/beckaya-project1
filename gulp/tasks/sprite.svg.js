@@ -2,7 +2,7 @@
 
 module.exports = function() {
   $.gulp.task('sprite:svg', function() {
-    return $.gulp.src('./source/sprite/*.svg')
+    return $.gulp.src('./source/style/sprite/icons/*.svg')
       .pipe($.gp.svgmin({
         js2svg: {
           pretty: true
@@ -20,7 +20,7 @@ module.exports = function() {
       .pipe($.gp.svgSprite({
         mode: {
           symbol: {
-            sprite: "../sprite.svg",
+            sprite: "sprite.svg",
             render: {
               scss: {
                 dest:
