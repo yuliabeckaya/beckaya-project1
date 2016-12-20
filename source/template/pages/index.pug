@@ -1,0 +1,37 @@
+extends ../_template
+
+block variables
+  - var title = 'Index'
+
+block content
+    .wrapper
+      include ../common/_header
+      section
+        .container
+          include ../common/_about
+      section.map
+        .container
+            .map-google
+            //iframe(src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2005.2658584528785!2d30.13930845236987!3d59.82811533832959!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46963bed7de4526d%3A0x8234013695a0f444!2z0YPQuy4g0JvRkdGC0YfQuNC60LAg0J_QuNC70Y7RgtC-0LLQsCwgNTAsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTgyNjQ!5e0!3m2!1sru!2sru!4v1480779497195', width='1920', height='930', frameborder='0', style='border:0', allowfullscreen='')
+            .contacts
+              .wrap-title2
+                .title2 Контакты
+              .contants_content
+                a.cnt(href='skype:yuliabetskaya?call')
+                  .cnt-icon
+                    img(src='assets/css/sprite/skype.svg', alt='')                    
+                  p.cnt-text yuliabetskaya
+                a.cnt(href='mailto:yuliabeckaya@gmail.com')
+                  .cnt-icon
+                    img(src='assets/css/sprite/envelope.svg', alt='')
+                  p.cnt-text yuliabeckaya@gmail.com
+                a.cnt(href='tel: +7 921 781 15 47')
+                  .cnt-icon
+                    img(src='assets/css/sprite/phone.svg', alt='')
+                  p.cnt-text +79217811547
+                .cnt
+                  a.cnt(href='https://goo.gl/maps/pYX5LyvbcGB2')
+                  .cnt-icon
+                    img(src='assets/css/sprite/map_marker.svg', alt='')
+                  p.cnt-text г.Санкт-Петербург, ул. Летчика Пилютова, д. 50к4
+    include ../common/_footer

@@ -1,20 +1,45 @@
 footer{
-	height: 140px;
+	height: $footer-height;
 	background-color: $black;
-	margin-top: -140px;
+	margin-top: -$footer-height;
+	opacity: .8;
+
+	@include tablets{
+		height: 250px;
+    margin-top: -250px;
+    background-color: #384246;
+    opacity: .99;
+	}
 
 }
 
-.footer__up{
-	height: 75px;
+.footer__up{	
+  padding-bottom: 20px;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+
+	@include tablets {
+    display: flex;
+    flex-flow: column wrap;
+  	justify-content: center;
+  	text-align: center;
+  }
 }
 
+.navigation-list{
+
+	@include tablets {
+    width: 100%;
+    text-align: center;
+    padding: 0 20%;
+  }
+}
 .navigation-item{
 	font-size: 16px;
 	float: left;
 	@extend %clearfix;
 	padding: 20px;
 	font-family: 'robotomedium';
+
 }
 
 .navigation-link{
@@ -36,6 +61,12 @@ footer{
 
 .icons{
 	text-align: right;
+	padding-top: 20px;
+
+	@include tablets {
+    width: 100%;
+    text-align: center;
+  }
 }
 
 
@@ -43,12 +74,19 @@ footer{
   color: #fff;
   font-size: 16px;
   opacity: .5;
+  padding-top: 6px;
 }
 
 .footer__text-left {
 	text-align: left;
-    width: 50%;
-    display: inline-block;
+  width: 50%;
+  display: inline-block;
+
+    @include tablets{
+    	width: 100%;
+    	text-align: center;
+    	margin-bottom: 20px;
+    }
 }
 
 .footer__text-right{
@@ -56,4 +94,10 @@ footer{
     width: 50%;
     display: inline-block;
     float: right;
+    @extend %clearfix;
+
+    @include tablets{
+    	width: 100%;
+    	text-align: center;
+    }
 }
